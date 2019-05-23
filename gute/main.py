@@ -11,6 +11,7 @@ def main():
     except ArgumentTypeError as err:
         print(err)
         print("type gute -h for help with syntax")
+        exit()
 
     source = Source(args.source_path)
     templates = Template.from_nodes(source.nodes(), args.template_path)
