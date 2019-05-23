@@ -24,3 +24,11 @@ class TemplateTest(unittest.TestCase):
             template.hydrate(),
         )
 
+    def test_hydrate_with_provided_template(self):
+        source_node = SourceNode(Path("./tests/data/post1.md"))
+        template_path = Path("./tests/data/template.html")
+        template = Template(source_node, template_path)
+        self.assertEqual(
+            "<html>\n<head><title>Great Website</title></head>\n<body>\n<h1>Hello, world</h1>\n\n<p>This is really great content. Let's make it static.</p>\n\n</body>\n</html>",
+            template.hydrate(),
+        )
