@@ -5,7 +5,7 @@ black==19.3b0
 Click==7.0
 -e git+git@github.com:phantummm/gute.git@9b47b31a43721d043c721e4946d7ebf8d598129c#egg=gute
 isort==4.3.20
-Jinja2==2.10.1
+Jinja2==2.11.3
 lazy-object-proxy==1.4.1
 markdown2==2.3.7
 MarkupSafe==1.1.1
